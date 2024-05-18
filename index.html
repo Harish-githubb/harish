@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Registration form</title>
+
+    </head>
+    <body>
+        <form action= "{{ url_for('Register') }}" method = "POST">
+
+            <table>
+                <tr>
+                    <td>Name:</td>
+
+
+                    <td>
+                        <input type="text" placeholder= "Name" name="Name">
+    
+                    </td>
+                </tr>
+
+    
+
+                <tr>
+                    <td>Age:</td>
+                    <td> 
+                        <input type ="number" placeholder="Age" name="Age">
+    
+                    </td>
+                </tr>
+
+         
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" placeholder="Email" name="Email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone number:</td>
+                <td> 
+                    <input type="text" placeholder="Phone number" name="Number">
+                </td>
+                
+                    
+              </tr>    
+              
+              <tr>
+                 <td> <b>Gender:</b> </td>
+                
+                <td> 
+                    <br>
+                    <input type="checkbox"  name="Male">
+                    
+                    <label for="Male">Male</label>
+                    <br>
+                    <input type="checkbox"  name="Female">
+                    <label for="Female">Female</label>
+                </td>
+            </tr>
+
+
+            </table>
+
+        <br>
+        <br>
+        <input type="submit">
+        </form>
+
+    </body>
+
+</html>
