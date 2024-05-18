@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <title> Signup Done! </title>
+    <h1>Signup Done!</h1>
+    <head>
+        <h2> Hi Thank you for sigining up</h2>
+    </head>
+    <body>
+        <h3> Check the following details</h3>
+
+
+        <table border="1" cellpadding="5" >
+            {% for key,value in infos.items() %}
+            <tr>
+                <th>{{key}}</th>
+                <td>{{value}}</td>
+
+            
+            </tr>
+   
+            {% endfor %}
+    </table>
+
+
+
+    </body>
+</html>
+
+
+
