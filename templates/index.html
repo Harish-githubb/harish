@@ -1,73 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Registration form</title>
-
-    </head>
-    <body>
-        <form action= "{{ url_for('Register') }}" method = "POST">
-
-            <table>
-                <tr>
-                    <td>Name:</td>
-
-
-                    <td>
-                        <input type="text" placeholder= "Name" name="Name">
-    
-                    </td>
-                </tr>
-
-    
-
-                <tr>
-                    <td>Age:</td>
-                    <td> 
-                        <input type ="number" placeholder="Age" name="Age">
-    
-                    </td>
-                </tr>
-
-         
-
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/Register" method="POST">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Name" name="Name" required></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" placeholder="Age" name="Age" required></td>
+            </tr>
             <tr>
                 <td>Email:</td>
-                <td>
-                    <input type="email" placeholder="Email" name="Email">
-                </td>
+                <td><input type="email" placeholder="Email" name="Email" required></td>
             </tr>
-
             <tr>
                 <td>Phone number:</td>
-                <td> 
-                    <input type="text" placeholder="Phone number" name="Number">
-                </td>
-                
-                    
-              </tr>    
-              
-              <tr>
-                 <td> <b>Gender:</b> </td>
-                
-                <td> 
-                    <br>
-                    <input type="checkbox"  name="Male">
-                    
-                    <label for="Male">Male</label>
-                    <br>
-                    <input type="checkbox"  name="Female">
+                <td><input type="text" placeholder="Phone number" name="Number" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="Gender" value="Male" id="Male">
+                    <label for="Male">Male</label><br>
+                    <input type="radio" name="Gender" value="Female" id="Female">
                     <label for="Female">Female</label>
                 </td>
             </tr>
-
-
-            </table>
-
-        <br>
-        <br>
-        <input type="submit">
-        </form>
-
-    </body>
-
+        </table>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
 </html>
